@@ -58,6 +58,7 @@ function validateForm() {
 
   // ADDING EVENTS TO LOCAL STORAGE
 
+  showNotes();
   let btn1 = document.getElementById("btn1");
 btn1.addEventListener("click", function(e) {
     let addTxt = document.getElementById("addTxt");
