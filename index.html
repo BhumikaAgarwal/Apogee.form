@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>APOGEE FORM</title>
+    <link rel="stylesheet" href="index.css">
+    <link href='https://fonts.googleapis.com/css?family=Dancing Script' rel='stylesheet'>
+
+</head>
+
+<body>
+    <div class="heading">APOGEE EVENTS MANAGEMENT SYSTEM</div>
+    <div class="hi">
+        <div class="forms">
+            <form aciton="/myaction.php" name="myForm" onsubmit="return validateForm()" method="post"
+                style="border: 5px solid black; padding: 02%; ">
+
+                <br>
+                <div class="heading2"><u>EVENT DETAILS</u></div>
+
+                <br>
+
+                <form aciton="/myaction.php" name="myForm" onsubmit="return validateForm()" method="post">
+                    <div class="card">
+                        <div class="cardb">
+                            <p class="cardT"
+                            style="font-size: 20px;
+                            padding-left: 10%;
+                            font-weight: bold;
+                            padding-top: 01%;">EVENT NAME:</p>
+                            <div class="form-group">
+                                <textarea class="form-control" id="addTxt" placeholder="Enter Event Name"></textarea>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="a1" id="department">
+                        <label for="Department">DEPARTMENT : </label><br>
+                        <select id="deptxt">
+                            <option value="1"> Department </option>
+                            <option value="1"> DVM </option>
+                            <option value="2"> CONTROLS </option>
+                            <option value="3"> DOPY </option>
+                            <option value="4"> SPONS </option>
+                            <option value="5"> PCR </option>
+                            <option value="6"> FIREWALLS </option>
+                            <option value="7"> ADP </option>
+                        </select>
+                    </div>
+
+                    <div class="a1" id="date">
+                        DATE OF EVENT: <br> <input type="date" name="fdate" required><br><b><span class="formerror">
+                            </span></b>
+                    </div>
+
+                    <div class="a1" id="timein">
+                        TIME-IN: <br><input type="time" name="ftimein" required><br><b><span
+                                class="formerror"></span></b>
+                    </div>
+
+                    <div class="a1" id="timeout">
+                        TIME-OUT: <br><input type="time" name="ftimeout" required><br><b><span
+                                class="formerror"></span></b>
+                    </div>
+
+                    <br>
+
+                    <div class="heading2"><u>CONT. DETAILS</u></div>
+
+                    <br>
+
+                    <div class="a1" id="poc">
+                        PERSON OF CONTACT: <br><input type="text" name="fpoc" placeholder="Enter POC"
+                            required><br><b><span class="formerror"></span></b>
+                    </div>
+
+                    <div class="a1" id="pass">
+                        BITS ID: <br><input type="text" name="passs" placeholder="20XXAAAAZZZZP"
+                            required><br><b><span class="formerror"></span></b>
+                    </div>
+
+                    <div class="a1" id="phone">
+                        PHONE :<br> <input type="text" name="fphone" placeholder="Enter Phone No" required><br><b><span
+                                class="formerror"></span></b>
+                    </div>
+
+                    <div class="a1" id="email">
+                        EMAIL:<br> <input type="email" name="femail" placeholder="Enter Email" required><br><b><span
+                                class="formerror"> </span></b>
+                    </div>
+
+                    <div class="submit">
+                        <input class="but" id="btn1" type="submit" value="SUBMIT" style="padding: 10px;">
+                    </div>
+
+                    <br>
+
+                </form>
+
+        </div>
+
+        <br>
+        <div class="eventsadd" style="  border: 5px solid black; padding: 02%; background-color: #ffe6f0;">
+        <div class="heading" style="text-align: center;">EVENTS</div>
+
+        <div id="notes" class="row container-fluid"> </div>
+        </div>
+
+    </div>
+
+</body>
+<script src="index.js"></script>
+
+</html>
